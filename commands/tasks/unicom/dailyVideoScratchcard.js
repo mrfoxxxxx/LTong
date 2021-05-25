@@ -141,8 +141,8 @@ var dailyVideoScratchcard = {
           console.reward('integral', result.data.data.prizeType ? result.data.data.integral : 0)
           console.info('提交任务成功', `+${result.data.data.prizeType ? result.data.data.integral : 0}`)
         }
-        console.info('等待15秒再继续')
-        await new Promise((resolve, reject) => setTimeout(resolve, 15 * 1000))
+        console.info('等待35秒再继续')
+        await new Promise((resolve, reject) => setTimeout(resolve, 31 * 1000))
       }
     } else {
       console.info('暂无可刮得商品')
