@@ -237,8 +237,8 @@ module.exports = {
             }
 
             if (freeTimes && advertTimes) {
-                console.info('等待15秒再继续')
-                await new Promise((resolve, reject) => setTimeout(resolve, 15 * 1000))
+                console.info('等待35秒再继续')
+                await new Promise((resolve, reject) => setTimeout(resolve, 31 * 1000))
             }
 
         } while (freeTimes || advertTimes)
