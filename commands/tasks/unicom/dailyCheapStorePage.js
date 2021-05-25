@@ -186,8 +186,8 @@ var dailyCheapStorePage = {
       }
 
       if (playCounts) {
-        console.info('等待15秒再继续')
-        await new Promise((resolve, reject) => setTimeout(resolve, 15 * 1000))
+        console.info('等待35秒再继续')
+        await new Promise((resolve, reject) => setTimeout(resolve, 31 * 1000))
       }
 
     } while (playCounts)
@@ -298,8 +298,8 @@ var dailyCheapStorePage = {
         return 2
       }
     }
-    console.info('等待5秒再继续')
-    await new Promise((resolve, reject) => setTimeout(resolve, 5 * 1000))
+    console.info('等待15秒再继续')
+    await new Promise((resolve, reject) => setTimeout(resolve, 15 * 1000))
 
     return 0
   },
