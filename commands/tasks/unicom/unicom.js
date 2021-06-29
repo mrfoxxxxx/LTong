@@ -209,7 +209,10 @@ var start = async (params) => {
   // 首页-积分查询-游戏任务
   await scheduler.regTask('dailygameIntegral', async (request) => {
     await require('./producGame').doGameIntegralTask(request, options)
-  }, taskOption)
+  }, {
+    ...taskOption,
+    startTime: 8 * 3600
+  })
 
   // 首页-知识-限时免费（连续7天阶梯激励）
   await scheduler.regTask('dailyCourse', async (request) => {
